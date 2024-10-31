@@ -82,18 +82,18 @@ void main() {
       if (exit == "5") {
         print("이용해 주셔서 감사합니다 ~ 안녕히 가세요!");
         break;
-      } else if (choice == "6") {
-        if (shoppingmall.totalPrice == 0) {
-          print("이미 장바구니가 비어있습니다.");
-        } else {
-          print("장바구니를 초기화합니다.");
-          shoppingmall.cart.clear();
-          shoppingmall.totalPrice = 0;
-        }
       } else {
         print("프로그램이 종료되지 않았습니다");
       }
       // 그외 모든 입력은 지원하지 않도록 안내 메세지 출력
+    } else if (choice == "6") {
+      if (shoppingmall.totalPrice == 0) {
+        print("이미 장바구니가 비어있습니다.");
+      } else {
+        print("장바구니를 초기화합니다.");
+        shoppingmall.cart.clear();
+        shoppingmall.totalPrice = 0;
+      }
     } else {
       print("지원하지 않는 기능입니다 ! 다시 시도해 주세요 ..");
     }
